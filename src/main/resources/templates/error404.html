@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>rickVideo - 404</title>
+</head>
+<body>
+    <!-- ******************************** NAVBAR ****************************************** -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <span class="navbar-brand"><b>rickVideo</b></span>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/Home" th:href="@{/Home}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/About" th:href="@{/About}">About <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+        <a class="btn btn-outline-light d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/LogIn" th:href="@{/LogIn}">Log In</a>
+    </nav>
+    <!-- ******************************** /NAVBAR ****************************************** -->
+
+    <div class="text-center container-fluid mt-4">
+
+        <h1> Error 404 </h1>
+        <h2> The requested page doesn't exist </h2>
+        <h4> Click <a href="/">here</a> to go back to the home</h4>
+
+    </div>
+</body>
+</html>
