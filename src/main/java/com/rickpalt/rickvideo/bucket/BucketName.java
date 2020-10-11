@@ -2,7 +2,7 @@ package com.rickpalt.rickvideo.bucket;
 
 public enum BucketName {
 
-    PROFILE_IMAGE("rickvideo-aws-storage");
+    BUCKET_LINK("rickvideo-aws-storage");
 
     private final String bucketName;
 

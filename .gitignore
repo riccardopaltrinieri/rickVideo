@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ### Secret keys ###
-!src/main/resources/application-key.properties
+!src/main/resources/aws.properties

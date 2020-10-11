@@ -5,6 +5,9 @@ rickVideo uses Spring and React frameworks to create a video-sharing website.
 Spring Framework - 2.3.4    
 aws-java-sdk - 1.11.879     
 apache-maven - 3.6.3  
+react - 16.13.1     
+axios - 0.20.0      
+
 
 ## How to install 
 How to get it from git
