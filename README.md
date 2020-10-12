@@ -19,7 +19,7 @@ for the backend and [VisualStudio Code](https://code.visualstudio.com/Download)
 for the React frontend).
     
 ## Usage
-Fill the [aws file](src/main/resources/aws.properties) with the keys of your aws profile
+Fill the [aws file](src/main/resources/aws.properties) with the keys of your aws profile.       
 Run the [main application](src/main/java/com/rickpalt/rickvideo/RickVideoApplication.java)
 in the java IDE, or you can create the jar with maven and run it in the terminal with the command:
 ```sh
