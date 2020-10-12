@@ -15,7 +15,7 @@ export default () => {
     <Grid container>
       <Grid container spacing={10}>
         <Grid item xs={12}>
-          <NavBar />
+          <NavBar onClick={getVideos}/>
         </Grid>
         <Grid justify="center" container spacing={10}>
           <Grid item xs={6}>

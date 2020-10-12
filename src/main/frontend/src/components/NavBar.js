@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import SimpleModal from './SimpleModal'
+import Refresh from "@material-ui/icons/Refresh";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const NavBar = () => {
+const NavBar = ({ onClick }) => {
   const classes = useStyles();
 
   return (
@@ -33,6 +34,10 @@ const NavBar = () => {
           <Typography variant="h6" className={classes.title}>
             rickVideo
           </Typography>
+          <Typography variant="h6" className={classes.title}>
+            About us
+          </Typography>
+          <Refresh onClick={onClick}/>
           <SimpleModal />
           <Button color="inherit">Login</Button>
         </Toolbar>

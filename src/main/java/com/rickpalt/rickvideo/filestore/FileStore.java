@@ -37,6 +37,7 @@ public class FileStore {
 
         try{
             s3.putObject(path, fileName, inputStream, metadata);
+            System.out.printf("file [%s] stored %n", fileName);
         } catch (AmazonServiceException e) {
             throw new IllegalStateException("Failed to store file to se3", e);
         }
@@ -64,7 +65,6 @@ public class FileStore {
 
                 for (S3ObjectSummary objectSummary : result.getObjectSummaries()) {
                     if(!objectSummary.getKey().endsWith(".jpg")) {
-                        System.out.println(objectSummary);
                         String[] split = objectSummary.getKey().split("/");
                         videos.add(new Video(UUID.fromString(split[0]), split[1]));
                     }

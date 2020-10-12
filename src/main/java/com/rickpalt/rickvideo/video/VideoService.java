@@ -51,8 +51,8 @@ public class VideoService {
     }
 
     private void isVideo(MultipartFile file) {
-        if (!Arrays.asList("video/mpeg", "video/x-mpeg", "video/mp4", "video/3gpp", "video/x-ms-wmv", "video/x-msvideo",
-                "video/avi")
+        if (!Arrays.asList("video/mpeg", "video/ogg", "video/mp4", "video/3gpp", "application/mp4",
+                "application/x-mpegurl", "video/webm")
                 .contains(file.getContentType()))
             throw new IllegalStateException("File must be a video [" + file.getContentType() + "]");
     }
