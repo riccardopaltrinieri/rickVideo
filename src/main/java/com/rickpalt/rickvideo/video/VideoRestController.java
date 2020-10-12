@@ -37,6 +37,13 @@ public class VideoRestController {
 
     @GetMapping("/video/{videoId}")
     public byte[] downloadVideo(@PathVariable("videoId") UUID videoId) {
-        return videoService.downloadVideo(videoId);
+        byte[] stream = videoService.downloadVideo(videoId);
+        System.out.println(stream);
+        return stream;
+    }
+
+    @GetMapping("/thumbnail/{videoId}")
+    public byte[] getThumbnail(@PathVariable("videoId") UUID videoId) {
+        return videoService.getThumbnail(videoId);
     }
 }
